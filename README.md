@@ -5,6 +5,7 @@
 pytohn == 3.8
 java
 JDK
-. MINECRAFT
-.. version 1.12
-.. server version 1.12
+
+- MINECRAFT
+-- version 1.12
+-- server version 1.12
