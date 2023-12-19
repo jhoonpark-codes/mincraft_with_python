@@ -11,6 +11,7 @@ direction = mc.player.getDirection()
 
 ## 아무것도 안 한 상태라면 
 ## direction.x = 0.32, direction.y = 0.11, direction.z = 0.93
+## TODO : mc.player.setDirection(1,1,1) 확인
 
 # make empty space
 BLOCKDISTANCE = 5
