@@ -1,4 +1,3 @@
-https://img.shields.io/badge/python-3.8+-blue
 # minecraft_with_python
 작성자 : 박정훈
 > Python으로 Minecraft 조작하여 데이터셋 생성하기
