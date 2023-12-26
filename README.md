@@ -1,5 +1,6 @@
 ![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/10e6dcfb-b1b7-472b-bb83-a9c96cd03a23)
 ![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/4f4de2ab-d612-4e97-8f27-9a61df3e5997)
+![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/cf9aa628-05c5-4c74-a4e5-a8fd9c57edd5)
 # minecraft_with_python
 작성자 : 박정훈
 > Python으로 Minecraft 조작하여 데이터셋 생성하기
