@@ -21,6 +21,7 @@ direction = mc.player.getDirection()
 ## TODO : mc.player.setDirection(1,1,1) 확인
 
 # make empty space
+# referenced https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html
 BLOCKDISTANCE = 5
 x_ = round(pos.x + (direction.x * BLOCKDISTANCE))
 y_ = round(pos.y + (direction.y * BLOCKDISTANCE) + 1)
