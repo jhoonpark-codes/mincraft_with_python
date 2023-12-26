@@ -52,8 +52,7 @@ mineflayer = require('mineflayer')
 ## TODO
 
 **MCPI API critical issues**
-* 방향 설정이 자유롭지 못함 (23.12.20)
-* https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html)
+* [방향 설정이 자유롭지 못함 (23.12.20)](https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html)
 > "One of the questions I get asked a lot about the Minecraft: Pi edition APi is "how can I get the direction the player is facing?" and I have always had to say "sorry you can't do that"
 * Block을 생성해서 의자, 책상을 만들어도 방향 설정이 자유롭지 않기 때문에 스크린캡처 시 올바른 방향 설정 불가능
 
