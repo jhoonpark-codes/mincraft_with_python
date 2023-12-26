@@ -20,6 +20,7 @@ pip install mineflayer
 
 ## Usage
 **STEP 1. activate local server**
+- Minecraft V1.12 implement 'server.js'
 
 **STEP 2. create mcpi obj with create()**
 ```py
