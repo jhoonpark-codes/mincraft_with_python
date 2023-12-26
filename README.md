@@ -33,7 +33,7 @@ mc = Minecraft.create()
 **STEP 3. import javascript and require mineflayer**
 > **KEEP IN MIND**
 * MineFlayer -> JavaScript로 구성
-* Minecraft가 서버와 HTTP로 통신하기 때문에 Javascript로 쓰여진 MineFlayer의 명령어를 Python단에서 require을 통해 호출하는 방법으로 작동
+* Minecraft가 서버와 HTTP를 주고받으며 통신하기 때문에 Javascript로 쓰여진 MineFlayer의 명령어를 Python단에서 require을 통해 호출하는 방법으로 작동
 ```py
 from javascript import require
 mineflayer = require('mineflayer')
