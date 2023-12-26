@@ -56,7 +56,7 @@ mineflayer = require('mineflayer')
 > "One of the questions I get asked a lot about the Minecraft: Pi edition APi is "how can I get the direction the player is facing?" and I have always had to say "sorry you can't do that"
 * Block을 생성해서 의자, 책상을 만들어도 방향 설정이 자유롭지 않기 때문에 스크린캡처 시 올바른 방향 설정 불가능
 
-* MineFlayer로 확장 중 (23.12.22)
+  *MineFlayer로 확장 중 (23.12.22)**
 - blockAt, can_see function : https://github.com/extremeheat/JSPyBridge/blob/master/examples/python/mineflayer2.py
 - Functions : https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
 - Python example : https://github.com/PrismarineJS/mineflayer/tree/master/examples/python
