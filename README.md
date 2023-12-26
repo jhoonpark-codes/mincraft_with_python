@@ -40,5 +40,11 @@ mineflayer = require('mineflayer')
 ```
 
 ## TODO
-### 현재 방향 설정이 자유롭지 못함 (https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html)
+**현재 방향 설정이 자유롭지 못함** 
+* https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html)
 > "One of the questions I get asked a lot about the Minecraft: Pi edition APi is "how can I get the direction the player is facing?" and I have always had to say "sorry you can't do that"
+
+* MineFlayer로 확장 중
+- blockAt, can_see function : https://github.com/extremeheat/JSPyBridge/blob/master/examples/python/mineflayer2.py
+- Functions : https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
+- Python example : https://github.com/PrismarineJS/mineflayer/tree/master/examples/python
