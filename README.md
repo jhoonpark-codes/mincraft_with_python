@@ -24,6 +24,7 @@ pip install mineflayer
 
 **STEP 2. create mcpi obj with create()**
 ```py
+# mcpi
 from mcpi.minecraft import Minecraft
 import mcpi.block as block
 
@@ -57,6 +58,16 @@ mineflayer = require('mineflayer')
 * Block을 생성해서 의자, 책상을 만들어도 방향 설정이 자유롭지 않기 때문에 스크린캡처 시 올바른 방향 설정 불가능
 
 **MineFlayer로 확장 중 (23.12.22)**
+* MineFlayer API를 통해 bot을 생성하여 필요한 행동을 명령 내리는 형태로 진행 됨
+```py
+from javascript import require, once
+mineflayer = require('mineflayer')
+
+bot = mineflayer.createBot({ 'host': HOST, 'port': PORT_NO, 'username': BOT_USERNAME, 'hideErrors': False })
+
+once(bot, 'login')
+bot.chat('I Spawned')
+```
 - blockAt, can_see function : https://github.com/extremeheat/JSPyBridge/blob/master/examples/python/mineflayer2.py
 - Functions : https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
 - Python example : https://github.com/PrismarineJS/mineflayer/tree/master/examples/python
