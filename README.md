@@ -40,10 +40,8 @@ mineflayer = require('mineflayer')
 ```
 
 ## 현재까지 진행 정도
-* print('Hello World') 예시 영상
-https://drive.google.com/file/d/1meIPwxhEP05Z7XH0aJDPSr7Fid26Lbrg/view?usp=drive_link
-* Block 만들기 예시 영상
-https://drive.google.com/file/d/1qPSPauVqnphmSvWC2Zn6CxghRPFNQiPT/view?usp=drive_link
+* [print('Hello World') 예시 영상](https://drive.google.com/file/d/1meIPwxhEP05Z7XH0aJDPSr7Fid26Lbrg/view?usp=drive_link)
+* [Block 만들기 예시 영상](https://drive.google.com/file/d/1qPSPauVqnphmSvWC2Zn6CxghRPFNQiPT/view?usp=drive_link)
 * 의자 만들기 예시 1
 ![의자만든예시](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/6f772642-5059-491c-90fa-7ae6a8ea7c87)
 
