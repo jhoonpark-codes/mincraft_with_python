@@ -1,9 +1,16 @@
 from mcpi.minecraft import Minecraft
+from javascript import require, On
 import mcpi.block as block
 
+# connect to server 
 mc = Minecraft.create()
 
-mc.postToChat('Make Chair')
+# create mineflayer object by require
+mineflayer = require('mineflayer')
+pathfinder = require('mineflayer-pathfinder')
+
+# server connection test
+mc.postToChat('Server Connected')
 
 # get position
 pos = mc.player.getPos()
