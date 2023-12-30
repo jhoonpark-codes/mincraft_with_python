@@ -62,6 +62,8 @@ mineflayer = require('mineflayer')
 
 **MineFlayer로 확장 중 (23.12.22)**
 * MineFlayer API를 통해 bot을 생성하여 필요한 행동을 명령 내리는 형태로 진행 됨
+* MineFlayer 실행 시 주의 점
+> Node.js 설치해야 함 (https://nodejs.org/en)
 ```py
 from javascript import require, once
 mineflayer = require('mineflayer')
