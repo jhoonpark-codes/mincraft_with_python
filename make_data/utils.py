@@ -50,67 +50,121 @@ def make_chair(APART_SIZE, LEG_SIZE, SEAT_SIZE):
 	## make chair
 	center = mc.player.getPos()
 
+	## clear area
+	mc.setBlocks(center.x - 20, 
+				center.y, 
+				center.z - 20, 
+				center.x + 20, 
+				center.y + 20, 
+				center.z + 20,
+				block.AIR)
+
+	## make floor
+	mc.setBlocks(center.x - 20, 
+				center.y - 1, 
+				center.z - 20, 
+				center.x + 20, 
+				center.y - 1, 
+				center.z + 20,
+				block.STONE)
+
+	APART_SIZE = 10
+	LEG_SIZE = 5
+	SEAT_SIZE = 5
+	# make wall
+	mc.setBlocks(center.x -20, 
+				center.y, 
+				center.z -20, 
+				center.x -20, 
+				center.y + 20, 
+				center.z + 20,
+				block.WOOD)
+	mc.setBlocks(center.x - 20, 
+				center.y, 
+				center.z - 20, 
+				center.x + 20, 
+				center.y + 20, 
+				center.z - 20,
+				block.WOOD)
+	mc.setBlocks(center.x + 20, 
+				center.y, 
+				center.z - 20, 
+				center.x + 20, 
+				center.y + 20, 
+				center.z + 20,
+				block.WOOD)
+	mc.setBlocks(center.x - 20, 
+				center.y, 
+				center.z + 20, 
+				center.x + 20, 
+				center.y + 20, 
+				center.z + 20,
+				block.WOOD)
+
 	# make legs
 	mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE, 
-             center.y, 
-             center.z + APART_SIZE + SEAT_SIZE, 
-             center.x + APART_SIZE + SEAT_SIZE, 
-             center.y + LEG_SIZE, 
-             center.z + APART_SIZE + SEAT_SIZE,
-             block.WOOD)
+				center.y, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE, 
+				center.z + APART_SIZE + SEAT_SIZE,
+				block.WOOD)
+
 	mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y, 
-	             center.z + APART_SIZE, 
-	             center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE, 
-	             center.z + APART_SIZE, 
-	             block.WOOD)
+				center.y, 
+				center.z + APART_SIZE, 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE, 
+				center.z + APART_SIZE, 
+				block.WOOD)
+
 	mc.setBlocks(center.x + APART_SIZE, 
-	             center.y, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             center.x + APART_SIZE, 
-	             center.y + LEG_SIZE, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             block.WOOD)
+				center.y, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				center.x + APART_SIZE, 
+				center.y + LEG_SIZE, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				block.WOOD)
+
 	mc.setBlocks(center.x + APART_SIZE, 
-	             center.y, 
-	             center.z + APART_SIZE, 
-	             center.x + APART_SIZE, 
-	             center.y + LEG_SIZE, 
-	             center.z + APART_SIZE, 
-	             block.WOOD)
+				center.y, 
+				center.z + APART_SIZE, 
+				center.x + APART_SIZE, 
+				center.y + LEG_SIZE, 
+				center.z + APART_SIZE, 
+				block.WOOD)
 
 	# make seat
 	mc.setBlocks(center.x + APART_SIZE, 
-	             center.y + LEG_SIZE + 1, 
-	             center.z + APART_SIZE, 
-	             center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE + 1, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             block.WOOD)
+				center.y + LEG_SIZE + 1, 
+				center.z + APART_SIZE, 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE + 1, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				block.WOOD)
 
 	# make back
 	mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE   + 1, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             block.WOOD)
+				center.y + LEG_SIZE   + 1, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				block.WOOD)
 	mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE   + 1, 
-	             center.z + APART_SIZE, 
-	             center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
-	             center.z + APART_SIZE, 
-	             block.WOOD)
-	mc.setBlocks(center.x + APART_SIZE, 
-	             center.y + LEG_SIZE   + LEG_SIZE//2, 
-	             center.z + APART_SIZE + SEAT_SIZE, 
-	             center.x + APART_SIZE + SEAT_SIZE, 
-	             center.y + LEG_SIZE   + LEG_SIZE, 
-	             center.z + APART_SIZE, 
-	             block.WOOD)
+				center.y + LEG_SIZE   + 1, 
+				center.z + APART_SIZE, 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
+				center.z + APART_SIZE, 
+				block.WOOD)
+	mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
+				center.z + APART_SIZE , 
+				center.x + APART_SIZE + SEAT_SIZE, 
+				center.y + LEG_SIZE   + LEG_SIZE, 
+				center.z + APART_SIZE + SEAT_SIZE, 
+				block.WOOD)
 
 def make_cup(SEAT_SIZE, CUBSIZE):
 
