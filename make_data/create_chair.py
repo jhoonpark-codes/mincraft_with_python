@@ -48,8 +48,8 @@ mc.setBlocks(center.x - 20,
              center.z + 20,
              block.STONE)
 
-APART_SIZE = 10
-LEG_SIZE = 5
+APART_SIZE = 3
+LEG_SIZE = 4
 SEAT_SIZE = 5
 # make wall
 mc.setBlocks(center.x -20, 
@@ -145,6 +145,8 @@ mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE,
              center.y + LEG_SIZE   + LEG_SIZE, 
              center.z + APART_SIZE + SEAT_SIZE, 
              block.WOOD)
+
+
 ## make cup
 CUPSIZE = 3
 mc.setBlocks(center.x + APART_SIZE + SEAT_SIZE//2, 

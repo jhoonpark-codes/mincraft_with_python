@@ -45,8 +45,9 @@ mc.setBlocks(center.x - 20,
              block.STONE)
 
 APART_SIZE = 3
-LEG_SIZE = 5
+LEG_SIZE = 4
 SEAT_SIZE = 5
+
 # make wall
 mc.setBlocks(center.x -20, 
              center.y, 
@@ -54,28 +55,28 @@ mc.setBlocks(center.x -20,
              center.x -20, 
              center.y + 20, 
              center.z + 20,
-             block.WOOD)
+             block.STONE)
 mc.setBlocks(center.x - 20, 
              center.y, 
              center.z - 20, 
              center.x + 20, 
              center.y + 20, 
              center.z - 20,
-             block.WOOD)
+             block.STONE)
 mc.setBlocks(center.x + 20, 
              center.y, 
              center.z - 20, 
              center.x + 20, 
              center.y + 20, 
              center.z + 20,
-             block.WOOD)
+             block.STONE)
 mc.setBlocks(center.x - 20, 
              center.y, 
              center.z + 20, 
              center.x + 20, 
              center.y + 20, 
              center.z + 20,
-             block.WOOD)
+             block.STONE)
 
 #### 의자가 뒤로?
 ## make legs
@@ -139,7 +140,7 @@ mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE,
              center.y + LEG_SIZE   + 1 + LEG_SIZE//2, 
              center.z - APART_SIZE , 
              center.x - APART_SIZE - SEAT_SIZE, 
-             center.y + LEG_SIZE   + LEG_SIZE, 
+             center.y + LEG_SIZE   + 1 + LEG_SIZE, 
              center.z - APART_SIZE - SEAT_SIZE, 
              block.WOOD)
 
