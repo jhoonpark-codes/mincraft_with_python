@@ -7,25 +7,21 @@ mineflayer = require('mineflayer')
 pathfinder = require('mineflayer-pathfinder')
 
 # connect to server 
-mc = Minecraft.create()
 HOST_SERVER = 'localhost'
 BOT_USERNAME = 'jhoonpark-bot'
-bot = mineflayer.createBot({ 'host': HOST_SERVER, 'port': 25565, 'username': BOT_USERNAME, 'hideErrors': False })
+port = 4711
+bot = mineflayer.createBot({ 'host': HOST_SERVER, 'port': port, 'username': BOT_USERNAME, 'hideErrors': False })
 
 
-# server connection test
+## server connection test
+# original
+mc = Minecraft.create()
 mc.postToChat('Server Connected')
+
 
 # get position
 pos = mc.player.getPos()
 direction = mc.player.getDirection()
-
-## 아무것도 안 한 상태라면 
-## direction.x = 0.32, direction.y = 0.11, direction.z = 0.93
-## TODO : mc.player.setDirection(1,1,1) 확인
-
-# make empty space
-# referenced https://www.stuffaboutcode.com/2015/01/minecraft-api-players-direction.html
 
 ## make chair
 center = mc.player.getPos()
@@ -146,3 +142,30 @@ mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE,
              center.y + LEG_SIZE   + LEG_SIZE, 
              center.z - APART_SIZE - SEAT_SIZE, 
              block.WOOD)
+
+
+
+
+
+##########################################
+## 방향 설정 test
+##########################################
+
+## 23.12.31
+## 1) connection 정의
+## address = 'localhost'
+## port = 4711 (default port)
+
+from mcpi.connection import Connection
+address, port = 'localhost', 4711 #### default setting
+conn = Connection(address, port)
+
+## 2) Minecraft object 생성
+mc = Minecraft(conn)
+
+## 2.1) object 생성 확인
+## mc.create() X -> mc.player.setPos() working함 but why?
+mc.player.getPos() # create  player위치 확인해줌
+
+
+

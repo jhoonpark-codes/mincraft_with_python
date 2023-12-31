@@ -25,13 +25,17 @@ pip install mineflayer
 **STEP 1. activate local server**
 - Minecraft V1.12 implement 'server.js'
 
-**STEP 2. create mcpi obj with create()**
+**STEP 2. create mcpi obj with create() (23.12.31 수정)**
 ```py
 # mcpi
 from mcpi.minecraft import Minecraft
+from mcpi.connection import Connection
 import mcpi.block as block
 
-mc = Minecraft.create()
+address, port = 'localhost', 4711
+conn = Connection(address, port)
+
+mc = Minecraft(conn).create()
 ```
 
 **STEP 3. import javascript and require mineflayer**
@@ -78,3 +82,15 @@ bot.chat('I Spawned')
 - blockAt, can_see function : https://github.com/extremeheat/JSPyBridge/blob/master/examples/python/mineflayer2.py
 - Functions : https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
 - Python example : https://github.com/PrismarineJS/mineflayer/tree/master/examples/python
+
+* 중간결론
+- MineFlayer은 bot을 만들어서 액션하게 하는 모듈
+- bot으로 block은 생성할 수 있으나 봇의 시야에서 스크린을 캡처할 수 없음
+- 결국 mcpi와 마찬가지로 시야 및 방향에서 문제가 생김
+
+
+**Picraft 도입 검토 중 (23.12.31)**
+* mcpi와 비슷한 Picraft 라이브러리 사용 가능
+* mcpi와 비슷한 기능을 하나 mcpi에선 안 되는 기능들이 다수 존재
+> 참조 사이트 : https://picraft.readthedocs.io/en/release-1.0/install.html
+
