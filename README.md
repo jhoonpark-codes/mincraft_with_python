@@ -94,3 +94,8 @@ bot.chat('I Spawned')
 * mcpi와 비슷한 기능을 하나 mcpi에선 안 되는 기능들이 다수 존재
 > 참조 사이트 : https://picraft.readthedocs.io/en/release-1.0/install.html
 
+**치명적 결함 (24.01.01)**
+* 캡쳐할 때 망치나 칼 같은 플레이어의 도구가 보임
+![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/dac40d33-eabe-4d0d-9567-3e29d8059ebc)
+* (수정(24.01.03)) IJCAI 2019 논문엔 그냥 툴 보이게 데이터 구성하긴 함 (https://www.ijcai.org/proceedings/2019/0339.pdf)
+
