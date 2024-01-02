@@ -50,11 +50,8 @@ mineflayer = require('mineflayer')
 ## 현재까지 진행 정도
 * [print('Hello World') 예시 영상](https://drive.google.com/file/d/1meIPwxhEP05Z7XH0aJDPSr7Fid26Lbrg/view?usp=drive_link)
 * [Block 만들기 예시 영상](https://drive.google.com/file/d/1qPSPauVqnphmSvWC2Zn6CxghRPFNQiPT/view?usp=drive_link)
-* 의자 만들기 예시 1
-![의자만든예시](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/6f772642-5059-491c-90fa-7ae6a8ea7c87)
-
-* 의자 만들기 예시 2 - 항공샷
-![의자항공샷](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/375bc0e7-3852-4a43-81a1-2bde315762e5)
+* 실내 공간 / 의자 / 컵 완성
+![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/dac40d33-eabe-4d0d-9567-3e29d8059ebc)
 
 
 ## TODO
