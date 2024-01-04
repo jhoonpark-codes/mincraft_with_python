@@ -208,6 +208,68 @@ mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2,
              center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2 - 2,
              block.IRON_BLOCK)
 
+## on the chair
+CUP_SIZE = 4
+
+# Cup floor?
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2+1, 
+             center.y + LEG_SIZE + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2+1, 
+             center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2-1, 
+             center.y + LEG_SIZE + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2-1,
+             block.GOLD_BLOCK)
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2+1, 
+             center.y + LEG_SIZE + 2 + 1, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2+1, 
+             center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2-1, 
+             center.y + LEG_SIZE + 2 + 1, 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2-1,
+             block.GOLD_BLOCK)
+# Cup wall?
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2,
+             block.GOLD_BLOCK)
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2, 
+             center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2,
+             block.GOLD_BLOCK)
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2,
+             block.GOLD_BLOCK)
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2, 
+             center.x - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2+CUP_SIZE//2,
+             block.GOLD_BLOCK)
+# Cup handle?
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3) , 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2 - 1, 
+             center.x - APART_SIZE - SEAT_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2 - 2,
+             block.GOLD_BLOCK)
+mc.setBlocks(center.x - APART_SIZE - SEAT_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3) - 2, 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2 - 2, 
+             center.x - APART_SIZE - SEAT_SIZE//2, 
+             center.y + LEG_SIZE + 2 + 2 + (CUP_SIZE - 3), 
+             center.z - APART_SIZE - SEAT_SIZE//2-CUP_SIZE//2 - 2,
+             block.GOLD_BLOCK)
 
 
 ##########################################
