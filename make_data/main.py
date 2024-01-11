@@ -4,6 +4,9 @@ import mcpi.block as block
 from mcpi.connection import Connection
 import argparse
 import time
+from PIL import ImageGrab
+import numpy as np
+import cv2
 
 
 # parser = argparse.ArgumentParser()
@@ -400,6 +403,13 @@ if __name__ == "__main__":
         else:
             make_cup_chair_right(mc, center, APART_SIZE = 3, LEG_SIZE = 8, SEAT_SIZE = 8, CUP_SIZE = 4, HOW_FAR_TO_RIGHT = 5)
 
+
+    img = ImageGrab.grab(bbox=(100,10,400,780)) #bbox specifies specific region (bbox= x,y,width,height *starts top-left)
+    img_np = np.array(img) #this is the array obtained from conversion
+    frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2GRAY)
+    cv2.imshow("test", frame)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
 

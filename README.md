@@ -12,6 +12,9 @@
 - MINECRAFT version 1.12
 - MINECRACT server version 1.12
 - mcpi (https://github.com/martinohanlon/mcpi)
+- pillow
+- opencv-python
+- numpy
 - mineflayer (https://github.com/PrismarineJS/mineflayer/tree/master)
 - AIMStarterKitPC 다운
 
@@ -101,9 +104,21 @@ bot.chat('I Spawned')
 
 
 
-**기존 Minecraft 서버에 로그인 되지 않을 때 해결법**
+**기존 Minecraft 서버에 로그인 되지 않을 때 해결법 (24.01.06)**
 * 현상 : 이미 사용중인 이름이라는 메세지와 함께 기존 계정으로 로그인 할 수 없으며 Microsoft 계정에 MineCraft가 없다는 메세지가 뜨며 에러 발생
 * 해결 1 : Minecraft 홈페이지에서 Microsoft 계정으로 로그인
 * 해결 2 : 런처 재다운로드
 * 완료
 > 이거 때문에 갑자기 안 되는 줄 알고 많이 쫄았다.
+
+**SCALE-UP test DONE! (24.01.11)**
+* main.py
+* block -> 벽 : block.STONE 의자 : block.WOOD 컵 : block.GOLD_ORE
+* 10회 반복 생성에 걸리는 시간 3초 미만
+* screenshot : PIL.ImageGrab, cv2.cvtColor, cv2.imshow, cv2.waitkey, cv2.imwrite
+* screenshot 생성 완료
+> TODO:
+> 1) PRIORY THING : random.random() 으로 의자 / 컵 / 벽 / 의자와 컵의 거리 random하게 생성
+> 2) 만들고 -> 찍고 -> 지우고 -> 다시 만들고 자동화 (24.01.14 전까지 완료 예상)
+
+
