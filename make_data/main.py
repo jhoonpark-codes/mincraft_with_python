@@ -3,6 +3,7 @@ from javascript import require, On
 import mcpi.block as block
 from mcpi.connection import Connection
 import argparse
+import time
 
 
 # parser = argparse.ArgumentParser()
@@ -389,6 +390,8 @@ if __name__ == "__main__":
 
     clear_and_make_space(mc, center, size = 50)
     make_chair(mc, center, APART_SIZE = 3, LEG_SIZE = 8, SEAT_SIZE = 8)
+
+    time.sleep(15)
 
     for i in range(5):
         if i % 2 == 1 :
