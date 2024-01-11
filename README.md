@@ -118,7 +118,7 @@ bot.chat('I Spawned')
 * screenshot : PIL.ImageGrab, cv2.cvtColor, cv2.imshow, cv2.waitkey, cv2.imwrite
 * screenshot 생성 완료
 > TODO:
-> 1) PRIORY THING : random.random() 으로 의자 / 컵 / 벽 / 의자와 컵의 거리 random하게 생성
+> 1) PRIORITY THING : random.random() 으로 의자 / 컵 / 벽 / 의자와 컵의 거리 random하게 생성
 > 2) 만들고 -> 찍고 -> 지우고 -> 다시 만들고 자동화 (24.01.14 전까지 완료 예상)
 
 
