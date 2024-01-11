@@ -3,21 +3,27 @@ from javascript import require, On
 import mcpi.block as block
 
 #### DEPRECATED 240101
+#### Left just in case and to remember THE efforts
 # create mineflayer object by require
 # mineflayer = require('mineflayer')
 # pathfinder = require('mineflayer-pathfinder')
-
 # connect to server 
-HOST_SERVER = 'localhost'
-BOT_USERNAME = 'jhoonpark-bot'
-port = 4711
-bot = mineflayer.createBot({ 'host': HOST_SERVER, 'port': port, 'username': BOT_USERNAME, 'hideErrors': False })
+# HOST_SERVER = 'localhost'
+# BOT_USERNAME = 'jhoonpark-bot'
+# port = 4711
+# bot = mineflayer.createBot({ 'host': HOST_SERVER, 'port': port, 'username': BOT_USERNAME, 'hideErrors': False })
 
 
 ## server connection test
 # original
-mc = Minecraft.create()
-mc.postToChat('Server Connected')
+# mc = Minecraft.create()
+# mc.postToChat('Server Connected')
+# updated 240101
+from mcpi.connection import Connection
+address, port = 'localhost', 4711 #### default setting
+conn = Connection(address, port)
+
+mc = Minecraft(conn).create()
 
 
 # get position

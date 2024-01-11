@@ -2,25 +2,6 @@ from mcpi.minecraft import Minecraft
 from javascript import require, On
 import mcpi.block as block
 
-# connect to server 
-mc = Minecraft.create()
-
-# create mineflayer object by require
-mineflayer = require('mineflayer')
-pathfinder = require('mineflayer-pathfinder')
-
-# server connection test
-mc.postToChat('Server Connected')
-
-# get position
-pos = mc.player.getPos()
-direction = mc.player.getDirection()
-
-## 아무것도 안 한 상태라면 
-## direction.x = 0.32, direction.y = 0.11, direction.z = 0.93
-## TODO : mc.player.setDirection(1,1,1) 확인
-
-center = mc.player.getPos()
 
 def make_space_for_objects(center, SIZE = 50):
 	## clear area
