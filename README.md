@@ -13,6 +13,7 @@
 - MINECRACT server version 1.12
 - mcpi (https://github.com/martinohanlon/mcpi)
 - mineflayer (https://github.com/PrismarineJS/mineflayer/tree/master)
+- AIMStarterKitPC 다운
 
 ## Install
 ```shell
@@ -97,3 +98,12 @@ bot.chat('I Spawned')
 ![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/dac40d33-eabe-4d0d-9567-3e29d8059ebc)
 * (수정(24.01.03)) IJCAI 2019 논문엔 그냥 툴 보이게 데이터 구성하긴 함 (https://www.ijcai.org/proceedings/2019/0339.pdf)
 
+
+
+
+**기존 Minecraft 서버에 로그인 되지 않을 때 해결법**
+* 현상 : 이미 사용중인 이름이라는 메세지와 함께 기존 계정으로 로그인 할 수 없으며 Microsoft 계정에 MineCraft가 없다는 메세지가 뜨며 에러 발생
+* 해결 1 : Minecraft 홈페이지에서 Microsoft 계정으로 로그인
+* 해결 2 : 런처 재다운로드
+* 완료
+> 이거 때문에 갑자기 안 되는 줄 알고 많이 쫄았다.
