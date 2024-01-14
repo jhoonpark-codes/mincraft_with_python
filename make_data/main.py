@@ -451,7 +451,7 @@ if __name__ == "__main__":
         now_ = datetime.now()
         now_string = now_.strftime('%Y-%m-%d-%H-%M-%S')
         file_name = chair_block + '_' + cup_block + '_' + where_to + '_' + now_string
-        image_path = 'C:/Users/jhoonpark/Desktop/jhoonpark/minecraft_sample_images/' + file_name + '.png'
+        image_path = 'C:/Users/jhoonpark/Desktop/minecraft_sample_images/' + file_name + '.png'
         cv2.imwrite(image_path, frame)
         mc.postToChat('image save done')
         
