@@ -111,14 +111,14 @@ bot.chat('I Spawned')
 * 완료
 > 이거 때문에 갑자기 안 되는 줄 알고 많이 쫄았다.
 
-**SCALE-UP test DONE! (24.01.11)**
+**SCALE-UP test DONE! (24.01.14 updated)**
 * main.py
 * block -> 벽 : block.STONE 의자 : block.WOOD 컵 : block.GOLD_ORE
 * 10회 반복 생성에 걸리는 시간 3초 미만
 * screenshot : PIL.ImageGrab, cv2.cvtColor, cv2.imshow, cv2.waitkey, cv2.imwrite
 * screenshot 생성 완료
+* random.random으로 의자의 위/아래/좌/우를 랜덤하게 선택하여 스크린 캡처 완료
 > TODO:
-> 1) PRIORITY THING : random.random() 으로 의자 / 컵 / 벽 / 의자와 컵의 거리 random하게 생성
-> 2) 만들고 -> 찍고 -> 지우고 -> 다시 만들고 자동화 (24.01.14 전까지 완료 예상)
+> 1) 만들고 -> 찍고 -> 지우고 -> 다시 만들고 자동화 (24.01.14 전까지 완료 예상)
 
 
