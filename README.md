@@ -56,7 +56,7 @@ mineflayer = require('mineflayer')
 * [Block 만들기 예시 영상](https://drive.google.com/file/d/1qPSPauVqnphmSvWC2Zn6CxghRPFNQiPT/view?usp=drive_link)
 * 실내 공간 / 의자 / 컵 완성
 ![image](https://github.com/jhoonpark-codes/mincraft_with_python/assets/154233920/dac40d33-eabe-4d0d-9567-3e29d8059ebc)
-* Scale-up Test DONE ! 
+* Scale-up Test DONE ! (24.01.16)
 > [Scale-up test demo video](https://drive.google.com/drive/folders/1szzehm-Nq9RHP4AU2UJbyzd4R2hNiM-8)
 
 
