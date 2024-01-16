@@ -10,6 +10,7 @@ import cv2
 import yaml
 import random
 from datetime import datetime
+import pyautogui
 
 
 # parser = argparse.ArgumentParser()
@@ -425,6 +426,8 @@ if __name__ == "__main__":
         # choice position of the cup
         positions = ['left', 'right', 'above', 'beneath']
 
+        # clear space
+        clear_and_make_space(mc, center, size = 50)
         # make chair
         make_chair(mc, center, APART_SIZE = 3, LEG_SIZE = 8, SEAT_SIZE = 8, block_id = chair_block_id)
         
@@ -443,24 +446,27 @@ if __name__ == "__main__":
         # screen shot
         # img = ImageGrab.grab(bbox=(100,10,400,780)) #bbox specifies specific region (bbox= x,y,width,height *starts top-left)
         time.sleep(2)
-        img = ImageGrab.grab() #bbox specifies specific region (bbox= x,y,width,height *starts top-left)
-        img_np = np.array(img) #this is the array obtained from conversion
-        frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
+        # img = ImageGrab.grab() #bbox specifies specific region (bbox= x,y,width,height *starts top-left)
+        # img_np = np.array(img) #this is the array obtained from conversion
+        # frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
+
+        myScreenshot = pyautogui.screenshot()
 
         # local path to save images
         now_ = datetime.now()
         now_string = now_.strftime('%Y-%m-%d-%H-%M-%S')
         file_name = chair_block + '_' + cup_block + '_' + where_to + '_' + now_string
         image_path = 'C:/Users/jhoonpark/Desktop/minecraft_sample_images/' + file_name + '.png'
-        cv2.imwrite(image_path, frame)
-        mc.postToChat('image save done')
+        print('image_path : ', image_path)
+
+        myScreenshot.save(image_path)
         
-        if i % 10 == 0:
-            cv2.imshow("test", frame)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
+        # if i % 10 == 0:
+        #     cv2.imshow("test", frame)
+        #     cv2.waitKey(0)
+        #     cv2.destroyAllWindows()
         
-        time.sleep(3)
+        time.sleep(1)
 
 
 
