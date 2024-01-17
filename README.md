@@ -111,7 +111,7 @@ bot.chat('I Spawned')
 * 해결 1 : Minecraft 홈페이지에서 Microsoft 계정으로 로그인
 * 해결 2 : 런처 재다운로드
 * 완료
-> 이거 때문에 갑자기 안 되는 줄 알고 많이 쫄았다.
+> ~~이거 때문에 갑자기 안 되는 줄 알고 많이 쫄았다.~~
 
 **SCALE-UP test DONE! (24.01.16 updated)**
 * main.py
