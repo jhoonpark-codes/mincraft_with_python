@@ -418,7 +418,8 @@ if __name__ == "__main__":
         while chair_block == cup_block :
             cup_block   = random.choice(block_list)
         
-        mc.postToChat('block size choice done')
+        if i == 0:
+            mc.postToChat('block size choice done')
         
         chair_block_id = block_info[chair_block]
         cup_block_id   = block_info[cup_block]
