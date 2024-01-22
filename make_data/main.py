@@ -409,7 +409,7 @@ if __name__ == "__main__":
 
     block_list = list(block_info.keys())
 
-    for i in range(20):
+    for i in range(800):
 
         # choice block
         chair_block = random.choice(block_list)
